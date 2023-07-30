@@ -6,11 +6,11 @@
         こんにちは、
         <%= link_to "#{@user.name}さん", user_path(@user.id), class: :greeting__link%>
       </div>
-      <div class="card__wrapper">
-      <%= render partial: "prototype" ,collection: @prototypes %> 
-      </div>
     <% end %>
     <%# // ログインしているときは上記を表示する %>
+    <div class="card__wrapper">
+      <%= render partial: "prototype" ,collection: @prototypes %> 
+    </div>
     <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
   </div>
 </main> 
